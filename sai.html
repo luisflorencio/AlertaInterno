@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Audio</title>
+  <style>
+    .myButton {
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 40px;
+	text-decoration:none;
+  }
+  .myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+  }
+  .myButton:active {
+	position:relative;
+	top:1px;
+  }
+  </style>
+  </head>
+  <body>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <input type="button" class="myButton" value="TOCAR CODU" onclick="play()">
+    <audio id="audio" src="http://soundbible.com/grab.php?id=1577&type=wav"></audio>
+
+  </body>
+</html>
