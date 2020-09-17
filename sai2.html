@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Sistema de Alerta Interno</title>
+	<style type="text/css">.myButton {
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 40px;
+	text-decoration:none;
+  }
+  .myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+  }
+  .myButton:active {
+	position:relative;
+	top:1px;
+  }
+	</style>
+</head>
+<body><script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+
+      function play2() {
+        var audio = document.getElementById("audio2");
+        audio.play();
+      }
+
+    </script>
+<p style="text-align: center;"><span style="font-family:verdana,geneva,sans-serif;"><span style="color:#FF0000;"><strong><span style="font-size:24px;">CRUZ VERMELHA PORTUGUESA</span></strong><br />
+CH ABRANTES/TOMAR</span></span></p>
+
+<p style="text-align: center;"><span style="font-family:verdana,geneva,sans-serif;"><span style="color:#FFA07A;"><span style="font-size:24px;"><strong>SAI - SISTEMA DE ALERTA INTERNO</strong></span></span></span></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:500px;">
+	<tbody>
+		<tr>
+			<td style="text-align: center;"><input class="myButton" onclick="play()" type="button" value="ALERTA CODU" /></td>
+			<td style="text-align: center;"><input class="myButton" onclick="play2()" type="button" value="SAIDA CHMT" /></td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align: center;">&nbsp;</p>
+
+			<p style="text-align: center;">&nbsp;</p>
+
+			<p style="text-align: center;">TESTE</p>
+			</td>
+			<td>
+			<p style="text-align: center;">&nbsp;</p>
+
+			<p style="text-align: center;">&nbsp;</p>
+
+			<p style="text-align: center;">TESTE</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p>
+<audio id="audio" src="http://soundbible.com/grab.php?id=1577&amp;type=wav">&nbsp;</audio>
+
+<audio id="audio2" src="http://soundbible.com/grab.php?id=2215&type=wav">&nbsp;</audio>
+</p>
+
+<p>&nbsp;</p>
+</body>
+</html>
