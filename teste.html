@@ -1,9 +1,7 @@
 <html>
 <head><meta charset="utf-8">
 	<title>Sistema de Alerta Interno</title>
-	<style type="text/css">
-  
-  .myButton {
+	<style type="text/css">.myButton {
 	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
 	background-color:#7892c2;
 	border-radius:10px;
@@ -34,17 +32,32 @@
 
       function play1() {
         var audio = document.getElementById("audio1");
-        audio.play();
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+      }
       }
 
       function play2() {
         var audio = document.getElementById("audio2");
-        audio.play();
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+      }
       }
 
       function play3() {
         var audio = document.getElementById("audio3");
-        audio.play();
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+      }
       }
 
       function play4() {
@@ -55,7 +68,7 @@
           audio.pause();
           audio.currentTime = 0;
       }
-}
+      }
 </script>
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
 	<thead>
